@@ -1,1 +1,692 @@
-1
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bơm Tự Áp Vương Gia - Giải Pháp Bơm Nước Không Cần Điện Cho Vùng Núi & Nông Nghiệp</title>
+  <meta name="description"
+    content="Chuyên cung cấp Bơm Tự Áp Ram Pump, máy công trình, phụ tùng linh kiện chính hãng. Giải pháp đưa nước lên cao đến 100m không tốn điện, chi phí vận hành bằng 0.">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Top Header Section -->
+  <header class="top-header">
+    <div class="container header-container">
+      <!-- Logo -->
+      <a href="#" class="brand-logo" id="mainLogo">
+        <div class="logo-emblem">
+          <svg viewBox="0 0 100 100" class="logo-svg">
+            <circle cx="50" cy="50" r="46" fill="none" stroke="#2e7d32" stroke-width="4" />
+            <path d="M22 62 L38 34 L52 50 L68 26 L82 62 Z" fill="#2e7d32" opacity="0.9" />
+            <path d="M15 65 C 35 55, 65 75, 85 65 C 75 78, 45 80, 15 65 Z" fill="#0288d1" />
+            <path d="M50 35 Q55 25 50 18 Q45 25 50 35 Z" fill="#29b6f6" />
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">BƠM TỰ ÁP</span>
+          <span class="logo-subtitle">VƯƠNG GIA</span>
+        </div>
+      </a>
+
+      <!-- Search Bar -->
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Bạn đang tìm sản phẩm gì?" autocomplete="off">
+        <button type="button" id="searchBtn" aria-label="Tìm kiếm">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+        <div class="search-results-dropdown" id="searchResults"></div>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="header-contacts">
+        <div class="contact-item">
+          <div class="contact-icon green">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+            </svg>
+          </div>
+          <div class="contact-text">
+            <span class="label">Hotline</span>
+            <a href="tel:0852982555" class="value highlight">0852 982 555</a>
+            <a href="tel:0852982555" class="value highlight">0978 493 028</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon green">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+            </svg>
+          </div>
+          <div class="contact-text">
+            <span class="label">Địa chỉ</span>
+            <span class="value">Lào Cai, Việt Nam</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Hamburger -->
+      <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Navigation Bar -->
+  <nav class="main-navbar" id="mainNav">
+    <div class="container nav-container">
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item active"><a href="index.html" class="nav-link">TRANG CHỦ</a></li>
+        <li class="nav-item"><a href="san-pham.html" class="nav-link">TẤT CẢ SẢN PHẨM</a></li>
+        <li class="nav-item dropdown">
+          <a href="bom-tu-ap-ram-pump.html" class="nav-link">
+            BƠM TỰ ÁP RAM PUMP
+            <svg class="arrow-down" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="bom-tu-ap-ram-pump.html">Bơm tự áp 60</a></li>
+            <li><a href="bom-tu-ap-ram-pump.html">Bơm tự áp 90</a></li>
+            <li><a href="bom-tu-ap-ram-pump.html">Bơm tự áp 110</a></li>
+            <li><a href="bom-tu-ap-ram-pump.html">Bơm tự áp 140</a></li>
+            <li><a href="bom-tu-ap-ram-pump.html">Bơm tự áp 160</a></li>
+            <li><a href="bom-tu-ap-ram-pump.html">Bơm tự áp MiNi</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="may-cong-trinh.html" class="nav-link">
+            MÁY CÔNG TRÌNH
+            <svg class="arrow-down" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="may-cong-trinh.html">Máy Đầm Thước</a></li>
+            <li><a href="may-cong-trinh.html">Bàn Bẻ Sắt</a></li>
+            <li><a href="may-cong-trinh.html">Máy Bơm Vữa</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="du-an-thuc-te.html" class="nav-link">DỰ ÁN THỰC TẾ</a></li>
+        <li class="nav-item"><a href="kien-thuc.html" class="nav-link">KIẾN THỨC</a></li>
+        <li class="nav-item"><a href="video.html" class="nav-link">VIDEO</a></li>
+        <li class="nav-item"><a href="gioi-thieu.html" class="nav-link">GIỚI THIỆU</a></li>
+        <li class="nav-item"><a href="lien-he.html" class="nav-link">LIÊN HỆ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-bg-overlay"></div>
+    <div class="container hero-container">
+      <!-- Left Content Column -->
+      <div class="hero-content">
+        <h1 class="hero-title">
+          BƠM TỰ ÁP <span class="highlight-green">RAM PUMP</span>
+        </h1>
+        <h2 class="hero-subtitle">BƠM NƯỚC KHÔNG CẦN ĐIỆN</h2>
+        <p class="hero-description">
+          GIẢI PHÁP BỀN VỮNG CHO VÙNG NÚI, NÔNG NGHIỆP, TRANG TRẠI VÀ CUỘC SỐNG XANH
+        </p>
+
+        <!-- 4 Feature Pills Grid -->
+        <div class="feature-pills-grid">
+          <div class="pill-item">
+            <div class="pill-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                <line x1="2" y1="2" x2="22" y2="22" stroke="#ff4d4d" stroke-width="2.5" />
+              </svg>
+            </div>
+            <div class="pill-text">
+              <strong>Không cần điện</strong>
+              <span>Không động cơ</span>
+            </div>
+          </div>
+
+          <div class="pill-item">
+            <div class="pill-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div class="pill-text">
+              <strong>Hoạt động 24/24</strong>
+              <span>Tuổi thọ trên 20 năm</span>
+            </div>
+          </div>
+
+          <div class="pill-item">
+            <div class="pill-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="19" x2="12" y2="5"></line>
+                <polyline points="5 12 12 5 19 12"></polyline>
+                <line x1="5" y1="19" x2="19" y2="19"></line>
+              </svg>
+            </div>
+            <div class="pill-text">
+              <strong>Đẩy nước lên cao</strong>
+              <span>đến 100m</span>
+            </div>
+          </div>
+
+          <div class="pill-item">
+            <div class="pill-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path
+                  d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                </path>
+              </svg>
+            </div>
+            <div class="pill-text">
+              <strong>Chi phí vận hành</strong>
+              <span>bằng 0</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="hero-actions">
+          <a href="san-pham.html" class="btn btn-primary">XEM SẢN PHẨM &rarr;</a>
+          <a href="https://www.youtube.com/@bomtuapvuonggia-du5wx" target="_blank" rel="noopener noreferrer"
+            class="btn btn-outline">
+            <span class="play-icon-wrap">▶</span> XEM VIDEO THỰC TẾ &#8857;
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Visual Column -->
+      <div class="hero-visual">
+        <div class="cursive-tagline">Đưa nguồn nước đến mọi nơi</div>
+        <div class="hero-image-wrapper">
+          <img src="assets/images/hero_pump.jpg" alt="Bơm tự áp Ram Pump Vương Gia hoạt động thực tế" class="hero-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banner Cards Section (2 Prominent Banners) -->
+  <section class="banner-grid-section">
+    <div class="container grid-two-col">
+
+      <!-- Card 1: Ram Pump -->
+      <div class="category-banner-card card-green">
+        <div class="card-bg-img" style="background-image: url('assets/images/card_ram_pump.jpg');"></div>
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <h3 class="card-title">BƠM TỰ ÁP <br><span class="card-highlight">RAM PUMP</span></h3>
+          <p class="card-desc">Giải pháp đưa nước lên cao bằng chính năng lượng dòng nước</p>
+          <a href="bom-tu-ap-ram-pump.html" class="btn btn-card-green">XEM NGAY &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Card 2: Máy Công Trình -->
+      <div class="category-banner-card card-navy">
+        <div class="card-bg-img" style="background-image: url('assets/images/may-bom-vua-be-tong.jpg');"></div>
+        <div class="card-overlay"></div>
+        <div class="card-content">
+          <h3 class="card-title">MÁY CÔNG TRÌNH</h3>
+          <p class="card-desc">Máy móc, thiết bị hiện đại <br>Phục vụ xây dựng và thi công</p>
+          <a href="may-cong-trinh.html" class="btn btn-card-green">XEM DANH MỤC &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Service Commitments / Highlight Features Bar -->
+  <section class="commitments-bar-section">
+    <div class="container commitments-grid">
+
+      <!-- Item 1 -->
+      <div class="commitment-item">
+        <div class="commitment-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0b2d4f" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <rect x="1" y="3" width="15" height="13"></rect>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+            <circle cx="5.5" cy="18.5" r="2.5"></circle>
+            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+          </svg>
+        </div>
+        <div class="commitment-text">
+          <strong class="commitment-title">Giao hàng toàn quốc</strong>
+          <span class="commitment-sub">Nhanh chóng - An toàn</span>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="commitment-item">
+        <div class="commitment-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0b2d4f" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            <polyline points="9 12 11 14 15 10"></polyline>
+          </svg>
+        </div>
+        <div class="commitment-text">
+          <strong class="commitment-title">Sản phẩm chính hãng</strong>
+          <span class="commitment-sub">Chất lượng đảm bảo</span>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="commitment-item">
+        <div class="commitment-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0b2d4f" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+            <path
+              d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z">
+            </path>
+          </svg>
+        </div>
+        <div class="commitment-text">
+          <strong class="commitment-title">Tư vấn kỹ thuật</strong>
+          <span class="commitment-sub">Miễn phí 24/7</span>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="commitment-item">
+        <div class="commitment-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0b2d4f" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+            </path>
+          </svg>
+        </div>
+        <div class="commitment-text">
+          <strong class="commitment-title">Hỗ trợ lắp đặt</strong>
+          <span class="commitment-sub">Hướng dẫn tận nơi</span>
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="commitment-item">
+        <div class="commitment-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#0b2d4f" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+        </div>
+        <div class="commitment-text">
+          <strong class="commitment-title">Đồng hành lâu dài</strong>
+          <span class="commitment-sub">Với khách hàng</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Featured Products Section ("SẢN PHẨM NỔI BẬT") -->
+  <section class="products-section" id="san-pham">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="products-header">
+        <h2 class="section-title">SẢN PHẨM NỔI BẬT</h2>
+
+        <!-- Category Filter Tabs -->
+        <div class="product-tabs">
+          <button class="tab-btn active" data-category="ram-pump">BƠM TỰ ÁP RAM PUMP</button>
+          <button class="tab-btn" data-category="may-cong-trinh">MÁY CÔNG TRÌNH</button>
+        </div>
+
+        <a href="san-pham.html" class="view-all-link">Xem tất cả &rarr;</a>
+      </div>
+
+      <!-- Products Grid (Bơm Tự Áp & Máy Công Trình) -->
+      <div class="products-grid" id="productsGrid">
+
+        <!-- Product 1 -->
+        <div class="product-card" data-category="ram-pump">
+          <div class="product-img-box">
+            <img src="assets/images/prod_ram_pump.jpg" alt="Bơm tự áp 60" class="product-img">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Bơm tự áp 60</h3>
+            <p class="product-desc">Phù hợp hộ gia đình, trang trại nhỏ</p>
+            <button class="btn-detail" data-id="1">Xem chi tiết &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card" data-category="ram-pump">
+          <div class="product-img-box">
+            <img src="assets/images/prod_ram_pump_90.jpg" alt="Bơm tự áp 90" class="product-img">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Bơm tự áp 90</h3>
+            <p class="product-desc">Hiệu suất cao, bền bỉ</p>
+            <button class="btn-detail" data-id="2">Xem chi tiết &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card" data-category="ram-pump">
+          <div class="product-img-box">
+            <img src="assets/images/prod_ram_pump_90.jpg" alt="Bơm tự áp 110" class="product-img">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Bơm tự áp 110</h3>
+            <p class="product-desc">Giải pháp cho địa hình cao</p>
+            <button class="btn-detail" data-id="3">Xem chi tiết &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card" data-category="ram-pump">
+          <div class="product-img-box">
+            <img src="assets/images/prod_ram_pump_90.jpg" alt="Bơm tự áp 140" class="product-img">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Bơm tự áp 140</h3>
+            <p class="product-desc">Giải pháp cho địa hình cao</p>
+            <button class="btn-detail" data-id="4">Xem chi tiết &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card" data-category="ram-pump">
+          <div class="product-img-box">
+            <img src="assets/images/prod_ram_pump_90.jpg" alt="Bơm tự áp 160" class="product-img">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Bơm tự áp 160</h3>
+            <p class="product-desc">Giải pháp cho địa hình cao</p>
+            <button class="btn-detail" data-id="5">Xem chi tiết &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card" data-category="ram-pump">
+          <div class="product-img-box">
+            <img src="assets/images/prod_ram_pump_mini.jpg" alt="Bơm tự áp mini" class="product-img">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Bơm Tự Áp Mini</h3>
+            <p class="product-desc">Giải pháp cho địa hình cao</p>
+            <button class="btn-detail" data-id="6">Xem chi tiết &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Máy Công Trình 1: bàn bẻ đai f1 -->
+        <div class="product-card" data-category="may-cong-trinh" style="display: none;">
+          <div class="product-img-box">
+            <img src="assets/images/ban-be-dai-f1.jpg" alt="bàn bẻ đai f1" class="product-img">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Bàn Bẻ Đai F1</h3>
+            <p class="product-desc">Bàn bẻ đai f1, bẻ đai sắt 6, 8, 10,đai lớn tối đa 500, bẻ vuông,chữ nhật,tam giác
+            </p>
+            <button class="btn-detail" data-id="7">Xem chi tiết &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Máy Công Trình 2: bàn bẻ sắt phi 22 có đế -->
+        <div class="product-card" data-category="may-cong-trinh" style="display: none;">
+          <div class="product-img-box">
+            <img src="assets/images/ban-be-sat-phi-22-co-de.jpg" alt="bàn bẻ sắt phi 22 có đế" class="product-img">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">bàn bẻ sắt phi 22 có đế</h3>
+            <p class="product-desc">Nhỏ gọn, linh hoạt</p>
+            <button class="btn-detail" data-id="12">Xem chi tiết &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Máy Công Trình 3: máy đầm thước bê tông Pin -->
+        <div class="product-card" data-category="may-cong-trinh" style="display: none;">
+          <div class="product-img-box">
+            <img src="assets/images/may-dam-thuoc-be-tong-pin.jpg" alt="máy đầm thước bê tông Pin" class="product-img">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">máy đầm thước bê tông Pin</h3>
+            <p class="product-desc">Nhỏ gọn, linh hoạt</p>
+            <button class="btn-detail" data-id="22">Xem chi tiết &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Máy Công Trình 4: máy đầm thước V nhôm điện -->
+        <div class="product-card" data-category="may-cong-trinh" style="display: none;">
+          <div class="product-img-box">
+            <img src="assets/images/may-dam-thuoc-v-nhom.jpg" alt="máy đầm thước V nhôm điện" class="product-img">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">máy đầm thước V nhôm điện</h3>
+            <p class="product-desc">Nhỏ gọn, linh hoạt</p>
+            <button class="btn-detail" data-id="21">Xem chi tiết &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Máy Công Trình 5: Máy bơm vữa bê tông -->
+        <div class="product-card" data-category="may-cong-trinh" style="display: none;">
+          <div class="product-img-box">
+            <img src="assets/images/may-bom-vua-be-tong.jpg" alt="Máy bơm vữa bê tông" class="product-img">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Máy bơm vữa bê tông</h3>
+            <p class="product-desc">Thuận tiện, hiệu quả cao</p>
+            <button class="btn-detail" data-id="19">Xem chi tiết &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Máy Công Trình 6: vận thang mini -->
+        <div class="product-card" data-category="may-cong-trinh" style="display: none;">
+          <div class="product-img-box">
+            <img src="assets/images/vận-thang-mini.jpg" alt="vận thang mini" class="product-img">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">vận thang mini</h3>
+            <p class="product-desc">Thuận tiện, giá rẻ</p>
+            <button class="btn-detail" data-id="18">Xem chi tiết &rarr;</button>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+
+      <!-- Column 1: Info -->
+      <div class="footer-col">
+        <div class="footer-brand">
+          <span class="logo-title">BƠM TỰ ÁP</span> <span class="logo-subtitle highlight">VƯƠNG GIA</span>
+        </div>
+        <p class="footer-about">
+          Đơn vị tiên phong chuyên nghiên cứu, chế tạo và lắp đặt hệ thống Bơm Tự Áp Ram Pump không dùng điện, giúp mang
+          nước sạch đến mọi vùng nông thôn, đồi núi Việt Nam.
+        </p>
+      </div>
+
+      <!-- Column 2: Contact -->
+      <div class="footer-col">
+        <h4 class="footer-heading">THÔNG TIN LIÊN HỆ</h4>
+        <ul class="footer-links">
+          <li><strong>Địa chỉ:</strong> Lào Cai, Việt Nam</li>
+          <li><strong>Hotline 1:</strong> <a href="tel:0852982555">0852 982 555</a></li>
+          <li><strong>Hotline 2:</strong> <a href="tel:0978493028">0978 493 028</a></li>
+          <li><strong>Email:</strong> vuongxaydung1989@gmail.com</li>
+          <li><strong>Website:</strong> <a href="https://www.bomtuapvuonggia.com"
+              target="_blank">https://www.bomtuapvuonggia.com</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Quick Links -->
+      <div class="footer-col">
+        <h4 class="footer-heading">DANH MỤC SẢN PHẨM</h4>
+        <ul class="footer-links">
+          <li><a href="bom-tu-ap-ram-pump.html">Bơm Tự Áp Ram Pump</a></li>
+          <li><a href="may-cong-trinh.html">Máy Công Trình</a></li>
+          <li><a href="san-pham.html">Tất cả sản phẩm</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container bottom-content">
+        <p>&copy; 2026 Bơm Tự Áp Vương Gia. Tất cả quyền được bảo lưu.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Video Player Popup -->
+  <div class="modal-overlay" id="videoModal">
+    <div class="modal-box">
+      <button class="modal-close" id="closeVideoModal">&times;</button>
+      <h3 class="modal-title">Video Hoạt Động Thực Tế Bơm Tự Áp Vương Gia</h3>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/@bomtuapvuonggia-du5wx" title="Bơm Tự Áp Ram Pump Vương Gia"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Product Detail Popup -->
+  <div class="modal-overlay" id="productModal">
+    <div class="modal-box product-modal-box">
+      <button class="modal-close" id="closeProductModal">&times;</button>
+      <div class="product-modal-grid">
+        <div class="product-modal-img">
+          <img id="modalProdImg" src="" alt="">
+        </div>
+        <div class="product-modal-details">
+          <h3 id="modalProdTitle">Tên sản phẩm</h3>
+          <p class="modal-subtitle" id="modalProdSubtitle">Mô tả ngắn</p>
+          <div class="modal-price-box">
+            <span class="price-label">Giá liên hệ Hotline:</span>
+            <span class="price-value">0852 982 555</span>
+          </div>
+          <div class="modal-features">
+            <h4>Đặc điểm nổi bật:</h4>
+            <ul id="modalProdFeatures">
+              <li>Hoạt động tự động 100% nhờ áp lực dòng chảy</li>
+              <li>Chất liệu thép đúc nguyên khối chịu áp lực cực cao</li>
+              <li>Tuổi thọ trên 20 năm, không tốn tiền điện hàng tháng</li>
+              <li>Bảo hành chính hãng 24 tháng toàn quốc</li>
+            </ul>
+          </div>
+          <div class="modal-video-action">
+            <a href="video.html" id="modalProdVideoLink" class="btn-modal-video" target="_blank"
+              rel="noopener noreferrer">
+              <span class="video-play-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </span>
+              <span>Xem Video Vận Hành Thực Tế &rarr;</span>
+            </a>
+          </div>
+          <div class="modal-actions modal-order-wrapper">
+            <div class="order-header">
+              <div class="order-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="9" cy="21" r="1"></circle>
+                  <circle cx="20" cy="21" r="1"></circle>
+                  <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                </svg>
+                <span>ĐẶT MUA HÀNG</span>
+              </div>
+              <span class="order-badge">Giao hàng toàn quốc</span>
+            </div>
+
+            <form id="orderModalForm" class="order-modal-form">
+              <!-- Cấu hình FormSubmit gửi về email vuongxaydung1989@gmail.com -->
+              <input type="hidden" name="_subject" id="orderSubject" value="[Bơm Tự Áp Vương Gia] Đơn đặt mua hàng mới">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
+
+              <div class="order-field">
+                <label for="orderProduct">Sản phẩm: <span class="required-star">*</span></label>
+                <input type="text" id="orderProduct" name="Sản phẩm" required placeholder="Tên sản phẩm...">
+              </div>
+
+              <div class="order-field">
+                <label for="orderPhone">Số điện thoại người mua: <span class="required-star">*</span></label>
+                <input type="tel" id="orderPhone" name="Số điện thoại người mua" required
+                  placeholder="Ví dụ: 0852982555" pattern="[0-9]{9,12}">
+              </div>
+
+              <div class="order-field">
+                <label for="orderAddress">Địa chỉ người mua: <span class="required-star">*</span></label>
+                <input type="text" id="orderAddress" name="Địa chỉ người mua" required
+                  placeholder="Nhập địa chỉ nhận hàng (thôn/xã, huyện, tỉnh)...">
+              </div>
+
+              <div class="order-field">
+                <label for="orderName">Họ và tên người mua (tùy chọn):</label>
+                <input type="text" id="orderName" name="Họ tên người mua" placeholder="Nhập họ và tên...">
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit-order" id="btnSubmitOrder">
+                XÁC NHẬN GỬI ĐẶT HÀNG &rarr;
+              </button>
+
+              <div id="orderFormMessage" class="order-form-message" style="display:none;"></div>
+
+              <div class="order-hotline-note">
+                Hoặc gọi Hotline đặt hàng ngay: <a href="tel:0852982555"><strong>0852 982 555</strong></a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Sticky Zalo Widget -->
+  <div class="floating-contact">
+    <a href="https://zalo.me/0852982555" target="_blank" rel="noopener noreferrer" class="float-btn zalo-btn" title="Chat Zalo: 0852 982 555">
+      <svg width="36" height="36" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.779 43.5892C10.1019 43.846 13.0061 43.1836 15.0682 42.1825C24.0225 47.1318 38.0197 46.8954 46.4923 41.4732C46.8209 40.9803 47.1279 40.4677 47.4128 39.9363C49.1062 36.7779 50.0004 33.22 50.0004 27.1316V22.7175C50.0004 16.629 49.1062 13.0711 47.4128 9.91273C45.7385 6.75436 43.2461 4.28093 40.0877 2.58758C36.9293 0.894239 33.3714 0 27.283 0H22.8499C17.6644 0 14.2982 0.652754 11.4699 1.89893C11.3153 2.03737 11.1636 2.17818 11.0151 2.32135C2.71734 10.3203 2.08658 27.6593 9.12279 37.0782C9.13064 37.0921 9.13933 37.1061 9.14889 37.1203C10.2334 38.7185 9.18694 41.5154 7.55068 43.1516C7.28431 43.399 7.37944 43.5512 7.779 43.5892Z" fill="white"/>
+        <path d="M20.5632 17H10.8382V19.0853H17.5869L10.9329 27.3317C10.7244 27.635 10.5728 27.9194 10.5728 28.5639V29.0947H19.748C20.203 29.0947 20.5822 28.7156 20.5822 28.2606V27.1421H13.4922L19.748 19.2938C19.8428 19.1801 20.0134 18.9716 20.0893 18.8768L20.1272 18.8199C20.4874 18.2891 20.5632 17.8341 20.5632 17.2844V17Z" fill="#0068FF"/>
+        <path d="M32.9416 29.0947H34.3255V17H32.2402V28.3933C32.2402 28.7725 32.5435 29.0947 32.9416 29.0947Z" fill="#0068FF"/>
+        <path d="M25.814 19.6924C23.1979 19.6924 21.0747 21.8156 21.0747 24.4317C21.0747 27.0478 23.1979 29.171 25.814 29.171C28.4301 29.171 30.5533 27.0478 30.5533 24.4317C30.5723 21.8156 28.4491 19.6924 25.814 19.6924ZM25.814 27.2184C24.2785 27.2184 23.0273 25.9672 23.0273 24.4317C23.0273 22.8962 24.2785 21.645 25.814 21.645C27.3495 21.645 28.6007 22.8962 28.6007 24.4317C28.6007 25.9672 27.3685 27.2184 25.814 27.2184Z" fill="#0068FF"/>
+        <path d="M40.4867 19.6162C37.8516 19.6162 35.7095 21.7584 35.7095 24.3934C35.7095 27.0285 37.8516 29.1707 40.4867 29.1707C43.1217 29.1707 45.2639 27.0285 45.2639 24.3934C45.2639 21.7584 43.1217 19.6162 40.4867 19.6162ZM40.4867 27.2181C38.9322 27.2181 37.681 25.9669 37.681 24.4124C37.681 22.8579 38.9322 21.6067 40.4867 21.6067C42.0412 21.6067 43.2924 22.8579 43.2924 24.4124C43.2924 25.9669 42.0412 27.2181 40.4867 27.2181Z" fill="#0068FF"/>
+        <path d="M29.4562 29.0944H30.5747V19.957H28.6221V28.2793C28.6221 28.7153 29.0012 29.0944 29.4562 29.0944Z" fill="#0068FF"/>
+      </svg>
+      <span class="float-tooltip">Chat Zalo: 0852 982 555</span>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

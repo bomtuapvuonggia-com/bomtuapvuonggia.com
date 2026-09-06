@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dự Án Thực Tế Lắp Đặt Bơm Tự Áp Ram Pump Vương Gia Toàn Quốc</title>
+  <meta name="description"
+    content="Tổng hợp các dự án thực tế lắp đặt bơm tự áp Ram Pump không dùng điện của Vương Gia đưa nước lên đồi cao 50m - 100m thành công tại Lào Cai, Hà Giang, Sơn La, Yên Bái. Khảo sát và thi công tận nơi.">
+  <meta name="keywords"
+    content="dự án bơm tự áp, lắp đặt bơm ram pump, bơm nước lên đồi cao, bơm tự áp lào cai, bơm tự áp hà giang, bơm tự áp sơn la, bơm nước không dùng điện">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Top Header Section -->
+  <header class="top-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-emblem">
+          <svg viewBox="0 0 100 100" class="logo-svg">
+            <circle cx="50" cy="50" r="46" fill="none" stroke="#2e7d32" stroke-width="4" />
+            <path d="M22 62 L38 34 L52 50 L68 26 L82 62 Z" fill="#2e7d32" opacity="0.9" />
+            <path d="M15 65 C 35 55, 65 75, 85 65 C 75 78, 45 80, 15 65 Z" fill="#0288d1" />
+            <path d="M50 35 Q55 25 50 18 Q45 25 50 35 Z" fill="#29b6f6" />
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">BƠM TỰ ÁP</span>
+          <span class="logo-subtitle">VƯƠNG GIA</span>
+        </div>
+      </a>
+
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Bạn đang tìm dự án tại tỉnh nào?" autocomplete="off">
+        <button type="button" id="searchBtn" aria-label="Tìm kiếm">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+        <div class="search-results-dropdown" id="searchResults"></div>
+      </div>
+
+      <div class="header-contacts">
+        <div class="contact-item">
+          <div class="contact-icon green">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+            </svg>
+          </div>
+          <div class="contact-text">
+            <span class="label">Hotline</span>
+            <a href="tel:0852982555" class="value highlight">0852 982 555</a>
+            <a href="tel:0978493028" class="value highlight">0978 493 028</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon green">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+            </svg>
+          </div>
+          <div class="contact-text">
+            <span class="label">Địa chỉ</span>
+            <span class="value">Lào Cai, Việt Nam</span>
+          </div>
+        </div>
+      </div>
+
+      <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle Navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Navigation Bar -->
+  <nav class="main-navbar" id="mainNav">
+    <div class="container nav-container">
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item"><a href="index.html" class="nav-link">TRANG CHỦ</a></li>
+        <li class="nav-item"><a href="san-pham.html" class="nav-link">TẤT CẢ SẢN PHẨM</a></li>
+        <li class="nav-item dropdown">
+          <a href="bom-tu-ap-ram-pump.html" class="nav-link">
+            BƠM TỰ ÁP RAM PUMP
+            <svg class="arrow-down" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="bom-tu-ap-ram-pump.html">Bơm tự áp 60</a></li>
+            <li><a href="bom-tu-ap-ram-pump.html">Bơm tự áp 90</a></li>
+            <li><a href="bom-tu-ap-ram-pump.html">Bơm tự áp 110</a></li>
+            <li><a href="bom-tu-ap-ram-pump.html">Bơm tự áp 140</a></li>
+            <li><a href="bom-tu-ap-ram-pump.html">Bơm tự áp 160</a></li>
+            <li><a href="bom-tu-ap-ram-pump.html">Bơm tự áp MiNi</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="may-cong-trinh.html" class="nav-link">
+            MÁY CÔNG TRÌNH
+            <svg class="arrow-down" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="may-cong-trinh.html">Máy Đầm Thước</a></li>
+            <li><a href="may-cong-trinh.html">Bàn Bẻ Sắt</a></li>
+            <li><a href="may-cong-trinh.html">Máy Bơm Vữa</a></li>
+          </ul>
+        </li>
+        <li class="nav-item active"><a href="du-an-thuc-te.html" class="nav-link">DỰ ÁN THỰC TẾ</a></li>
+        <li class="nav-item"><a href="kien-thuc.html" class="nav-link">KIẾN THỨC</a></li>
+        <li class="nav-item"><a href="video.html" class="nav-link">VIDEO</a></li>
+        <li class="nav-item"><a href="gioi-thieu.html" class="nav-link">GIỚI THIỆU</a></li>
+        <li class="nav-item"><a href="lien-he.html" class="nav-link">LIÊN HỆ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Subpage Header Banner -->
+  <section class="subpage-banner">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Trang chủ</a> / <span>Dự Án Thực Tế</span>
+      </div>
+      <h1 class="subpage-title">DỰ ÁN THỰC TẾ THI CÔNG TOÀN QUỐC</h1>
+      <p class="subpage-subtitle">Hàng trăm công trình Bơm Tự Áp Ram Pump Vương Gia đã đưa nước sinh hoạt & tưới tiêu
+        lên đồi núi cao</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="page-content container" style="padding: 40px 20px;">
+
+    <div class="project-cards-grid">
+
+      <!-- DỰ ÁN 1: LÀO CAI -->
+      <article
+        style="background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 4px 15px rgba(0,0,0,0.06); display: flex; flex-direction: column;">
+        <div style="position: relative;">
+          <img src="assets/images/hero_pump.jpg"
+            alt="Dự án lắp đặt hệ thống bơm tự áp Ram Pump Vương Gia tại Vạn Hòa Lào Cai đưa nước lên đỉnh đồi cao 65m"
+            style="width: 100%; height: 230px; object-fit: cover; display: block;" loading="lazy">
+          <span
+            style="position: absolute; top: 12px; left: 12px; background: #2e7d32; color: #ffffff; font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">LÀO CAI</span>
+        </div>
+        <div style="padding: 22px; display: flex; flex-direction: column; flex-grow: 1;">
+          <h3 style="font-size: 1.18rem; color: var(--primary-navy); margin: 0 0 10px; line-height: 1.4; font-weight: 700;">
+            Lắp Đặt Bơm Tự Áp Ram Pump Cấp Nước Sinh Hoạt Tại Vạn Hòa, Lào Cai
+          </h3>
+          <p style="font-size: 0.88rem; color: #475569; line-height: 1.6; margin-bottom: 14px; flex-grow: 1;">
+            Triển khai lắp đặt thành công hệ thống <strong>bơm tự áp Ram Pump Vương Gia</strong> tận dụng 100% áp lực dòng chảy tự nhiên từ khe suối đáy vực, không tiêu tốn điện năng hay nhiên liệu xăng dầu. Nước được tự động đẩy thẳng đứng lên bể tích trữ trên đỉnh đồi cao <strong>65 mét</strong>, qua hệ thống đường ống dẫn dài <strong>450 mét</strong>, đảm bảo nguồn nước sinh hoạt sạch ổn định quanh năm cho hơn 35 hộ dân bản địa.
+          </p>
+          <div style="background: #f8fafc; border-radius: 8px; padding: 12px; margin-bottom: 16px; border: 1px dashed #cbd5e1; font-size: 0.82rem; color: #334155; line-height: 1.6;">
+            <div>💧 <strong>Độ cao đẩy nước:</strong> 65m thẳng đứng (độ dốc địa hình lớn)</div>
+            <div>📏 <strong>Khoảng cách dẫn xa:</strong> 450m đường ống dẫn</div>
+            <div>⚡ <strong>Chi phí điện hàng tháng:</strong> 0 đồng (tiết kiệm 100% năng lượng)</div>
+            <div>🏡 <strong>Ứng dụng:</strong> Cấp nước sinh hoạt dân sinh & trang trại</div>
+          </div>
+          <div style="display: flex; gap: 10px; margin-top: auto;">
+            <a href="video.html" class="btn btn-primary" style="flex: 1; text-align: center; padding: 9px 12px; font-size: 0.82rem; text-decoration: none;">
+              ▶ Xem Video Thực Tế
+            </a>
+            <a href="tel:0852982555" class="btn" style="background: #e6f4ea; color: #2e7d32; padding: 9px 12px; font-size: 0.82rem; text-decoration: none; font-weight: 700; border: 1px solid #bbf7d0;">
+              📞 Tư Vấn: 0852 982 555
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- DỰ ÁN 2: HÀ GIANG -->
+      <article
+        style="background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 4px 15px rgba(0,0,0,0.06); display: flex; flex-direction: column;">
+        <div style="position: relative;">
+          <img src="assets/images/card_ram_pump.jpg"
+            alt="Dự án lắp đặt bơm tự áp Ram Pump không dùng điện tưới cây tại khu nghỉ dưỡng Hmong Village Quản Bạ Hà Giang"
+            style="width: 100%; height: 230px; object-fit: cover; display: block;" loading="lazy">
+          <span
+            style="position: absolute; top: 12px; left: 12px; background: #2e7d32; color: #ffffff; font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">HÀ GIANG</span>
+        </div>
+        <div style="padding: 22px; display: flex; flex-direction: column; flex-grow: 1;">
+          <h3 style="font-size: 1.18rem; color: var(--primary-navy); margin: 0 0 10px; line-height: 1.4; font-weight: 700;">
+            Lắp Bơm Tự Áp Không Dùng Điện Tưới Trang Trại & Nghỉ Dưỡng H'Mong Village, Hà Giang
+          </h3>
+          <p style="font-size: 0.88rem; color: #475569; line-height: 1.6; margin-bottom: 14px; flex-grow: 1;">
+            Ứng dụng công nghệ <strong>bơm nước tự áp không tốn điện</strong> tại khu du lịch sinh thái và trang trại cam đồi dốc Quản Bạ, Hà Giang. Máy bơm vận hành liên tục 24/24 nhờ dòng chảy khe suối tự nhiên, đẩy nước lên độ cao hơn <strong>45 mét</strong> để tưới mát cho trang trại cam 5 hecta và cấp nước cảnh quan khuôn viên. Thiết bị hoạt động bền bỉ, êm ái suốt hơn 3 năm qua mà không phát sinh chi phí vận hành hay bảo dưỡng phức tạp.
+          </p>
+          <div style="background: #f8fafc; border-radius: 8px; padding: 12px; margin-bottom: 16px; border: 1px dashed #cbd5e1; font-size: 0.82rem; color: #334155; line-height: 1.6;">
+            <div>💧 <strong>Độ cao đẩy nước:</strong> 45m - 50m thẳng đứng</div>
+            <div>📏 <strong>Quy mô tưới tiêu:</strong> 5 hecta trang trại cam đồi dốc</div>
+            <div>⚡ <strong>Độ bền & tiếng ồn:</strong> Hoạt động êm ái liên tục suốt 3 năm</div>
+            <div>🌿 <strong>Ứng dụng:</strong> Tưới tự động trang trại & cấp nước sinh thái</div>
+          </div>
+          <div style="display: flex; gap: 10px; margin-top: auto;">
+            <a href="video.html" class="btn btn-primary" style="flex: 1; text-align: center; padding: 9px 12px; font-size: 0.82rem; text-decoration: none;">
+              ▶ Xem Video Thực Tế
+            </a>
+            <a href="tel:0852982555" class="btn" style="background: #e6f4ea; color: #2e7d32; padding: 9px 12px; font-size: 0.82rem; text-decoration: none; font-weight: 700; border: 1px solid #bbf7d0;">
+              📞 Tư Vấn: 0852 982 555
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- DỰ ÁN 3: SƠN LA -->
+      <article
+        style="background: #ffffff; border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 4px 15px rgba(0,0,0,0.06); display: flex; flex-direction: column;">
+        <div style="position: relative;">
+          <img src="assets/images/du-an-cum-2-may-bom-tu-ap.jpg"
+            alt="Dự án lắp đặt cụm 2 máy bơm tự áp Ram Pump Vương Gia đẩy nước suối lên núi cao 92m tại Sơn La"
+            style="width: 100%; height: 230px; object-fit: cover; display: block;" loading="lazy">
+          <span
+            style="position: absolute; top: 12px; left: 12px; background: #2e7d32; color: #ffffff; font-size: 0.75rem; font-weight: 700; padding: 4px 10px; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);">SƠN LA</span>
+        </div>
+        <div style="padding: 22px; display: flex; flex-direction: column; flex-grow: 1;">
+          <h3 style="font-size: 1.18rem; color: var(--primary-navy); margin: 0 0 10px; line-height: 1.4; font-weight: 700;">
+            Lắp Đặt Cụm 2 Máy Bơm Tự Áp Đẩy Nước Lên Đồi Chè Cao 92m Tại Sơn La
+          </h3>
+          <p style="font-size: 0.88rem; color: #475569; line-height: 1.6; margin-bottom: 14px; flex-grow: 1;">
+            Thi công hoàn thiện <strong>cụm 2 máy bơm tự áp Ram Pump đấu song song</strong> tại vùng núi cao Sơn La, nơi địa hình chia cắt phức tạp không có lưới điện quốc gia. Hệ thống khai thác sức nước dòng suối đẩy nước vượt độ cao chênh lệch ấn tượng <strong>92 mét</strong>, đường ống dẫn dài hơn <strong>600 mét</strong> lên tận đỉnh đồi chè. Giải pháp giúp chủ vườn chè xóa tan nỗi lo hạn hán mùa khô, tiết kiệm hàng chục triệu đồng tiền xăng dầu máy nổ mỗi vụ.
+          </p>
+          <div style="background: #f8fafc; border-radius: 8px; padding: 12px; margin-bottom: 16px; border: 1px dashed #cbd5e1; font-size: 0.82rem; color: #334155; line-height: 1.6;">
+            <div>💧 <strong>Độ cao đẩy nước:</strong> 92m thẳng đứng (kỷ lục đẩy cao đồi núi)</div>
+            <div>📏 <strong>Chiều dài đường dẫn:</strong> Hơn 600m ống dẫn áp lực</div>
+            <div>⚡ <strong>Cấu hình thiết bị:</strong> Cụm 2 máy bơm tự áp song song trợ lực</div>
+            <div>🍃 <strong>Hiệu quả:</strong> Cứu hạn mùa khô đồi chè, tiết kiệm tối đa chi phí</div>
+          </div>
+          <div style="display: flex; gap: 10px; margin-top: auto;">
+            <a href="video.html" class="btn btn-primary" style="flex: 1; text-align: center; padding: 9px 12px; font-size: 0.82rem; text-decoration: none;">
+              ▶ Xem Video Thực Tế
+            </a>
+            <a href="tel:0852982555" class="btn" style="background: #e6f4ea; color: #2e7d32; padding: 9px 12px; font-size: 0.82rem; text-decoration: none; font-weight: 700; border: 1px solid #bbf7d0;">
+              📞 Tư Vấn: 0852 982 555
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand"><span class="logo-title">BƠM TỰ ÁP</span> <span class="logo-subtitle highlight">VƯƠNG
+            GIA</span></div>
+        <p class="footer-about">Triển khai dự án Bơm Tự Áp Ram Pump trên khắp các tỉnh thành cả nước.</p>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">THÔNG TIN LIÊN HỆ</h4>
+        <ul class="footer-links">
+          <li><strong>Địa chỉ:</strong> Lào Cai, Việt Nam</li>
+          <li><strong>Hotline 1:</strong> <a href="tel:0852982555">0852 982 555</a></li>
+          <li><strong>Hotline 2:</strong> <a href="tel:0978493028">0978 493 028</a></li>
+          <li><strong>Email:</strong> vuongxaydung1989@gmail.com</li>
+          <li><strong>Website:</strong> <a href="https://www.bomtuapvuonggia.com"
+              target="_blank">https://www.bomtuapvuonggia.com</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">DANH MỤC</h4>
+        <ul class="footer-links">
+          <li><a href="bom-tu-ap-ram-pump.html">Bơm Tự Áp Ram Pump</a></li>
+          <li><a href="may-cong-trinh.html">Máy Công Trình</a></li>
+          <li><a href="san-pham.html">Tất cả sản phẩm</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container bottom-content">
+        <p>&copy; 2026 Bơm Tự Áp Vương Gia. Tất cả quyền được bảo lưu.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Sticky Zalo Widget -->
+  <div class="floating-contact">
+    <a href="https://zalo.me/0852982555" target="_blank" rel="noopener noreferrer" class="float-btn zalo-btn" title="Chat Zalo: 0852 982 555">
+      <svg width="36" height="36" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.779 43.5892C10.1019 43.846 13.0061 43.1836 15.0682 42.1825C24.0225 47.1318 38.0197 46.8954 46.4923 41.4732C46.8209 40.9803 47.1279 40.4677 47.4128 39.9363C49.1062 36.7779 50.0004 33.22 50.0004 27.1316V22.7175C50.0004 16.629 49.1062 13.0711 47.4128 9.91273C45.7385 6.75436 43.2461 4.28093 40.0877 2.58758C36.9293 0.894239 33.3714 0 27.283 0H22.8499C17.6644 0 14.2982 0.652754 11.4699 1.89893C11.3153 2.03737 11.1636 2.17818 11.0151 2.32135C2.71734 10.3203 2.08658 27.6593 9.12279 37.0782C9.13064 37.0921 9.13933 37.1061 9.14889 37.1203C10.2334 38.7185 9.18694 41.5154 7.55068 43.1516C7.28431 43.399 7.37944 43.5512 7.779 43.5892Z" fill="white"/>
+        <path d="M20.5632 17H10.8382V19.0853H17.5869L10.9329 27.3317C10.7244 27.635 10.5728 27.9194 10.5728 28.5639V29.0947H19.748C20.203 29.0947 20.5822 28.7156 20.5822 28.2606V27.1421H13.4922L19.748 19.2938C19.8428 19.1801 20.0134 18.9716 20.0893 18.8768L20.1272 18.8199C20.4874 18.2891 20.5632 17.8341 20.5632 17.2844V17Z" fill="#0068FF"/>
+        <path d="M32.9416 29.0947H34.3255V17H32.2402V28.3933C32.2402 28.7725 32.5435 29.0947 32.9416 29.0947Z" fill="#0068FF"/>
+        <path d="M25.814 19.6924C23.1979 19.6924 21.0747 21.8156 21.0747 24.4317C21.0747 27.0478 23.1979 29.171 25.814 29.171C28.4301 29.171 30.5533 27.0478 30.5533 24.4317C30.5723 21.8156 28.4491 19.6924 25.814 19.6924ZM25.814 27.2184C24.2785 27.2184 23.0273 25.9672 23.0273 24.4317C23.0273 22.8962 24.2785 21.645 25.814 21.645C27.3495 21.645 28.6007 22.8962 28.6007 24.4317C28.6007 25.9672 27.3685 27.2184 25.814 27.2184Z" fill="#0068FF"/>
+        <path d="M40.4867 19.6162C37.8516 19.6162 35.7095 21.7584 35.7095 24.3934C35.7095 27.0285 37.8516 29.1707 40.4867 29.1707C43.1217 29.1707 45.2639 27.0285 45.2639 24.3934C45.2639 21.7584 43.1217 19.6162 40.4867 19.6162ZM40.4867 27.2181C38.9322 27.2181 37.681 25.9669 37.681 24.4124C37.681 22.8579 38.9322 21.6067 40.4867 21.6067C42.0412 21.6067 43.2924 22.8579 43.2924 24.4124C43.2924 25.9669 42.0412 27.2181 40.4867 27.2181Z" fill="#0068FF"/>
+        <path d="M29.4562 29.0944H30.5747V19.957H28.6221V28.2793C28.6221 28.7153 29.0012 29.0944 29.4562 29.0944Z" fill="#0068FF"/>
+      </svg>
+      <span class="float-tooltip">Chat Zalo: 0852 982 555</span>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

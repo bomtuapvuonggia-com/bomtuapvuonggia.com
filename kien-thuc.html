@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiến Thức Bơm Tự Áp - Vương Gia | Cẩm Nang & Kỹ Thuật Lắp Đặt</title>
+  <meta name="description"
+    content="Tổng hợp kiến thức kỹ thuật về bơm tự áp Ram Pump: Hướng dẫn lắp đặt, tính toán độ dốc, chọn đường ống và bảo dưỡng máy bơm va thủy lực.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Top Header Section -->
+  <header class="top-header">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-emblem">
+          <svg viewBox="0 0 100 100" class="logo-svg">
+            <circle cx="50" cy="50" r="46" fill="none" stroke="#2e7d32" stroke-width="4" />
+            <path d="M22 62 L38 34 L52 50 L68 26 L82 62 Z" fill="#2e7d32" opacity="0.9" />
+            <path d="M15 65 C 35 55, 65 75, 85 65 C 75 78, 45 80, 15 65 Z" fill="#0288d1" />
+            <path d="M50 35 Q55 25 50 18 Q45 25 50 35 Z" fill="#29b6f6" />
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">BƠM TỰ ÁP</span>
+          <span class="logo-subtitle">VƯƠNG GIA</span>
+        </div>
+      </a>
+
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Tìm kiếm bài viết kỹ thuật..." autocomplete="off">
+        <button type="button" id="searchBtn" aria-label="Tìm kiếm">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+        <div class="search-results-dropdown" id="searchResults"></div>
+      </div>
+
+      <div class="header-contacts">
+        <div class="contact-item">
+          <div class="contact-icon green">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+            </svg>
+          </div>
+          <div class="contact-text">
+            <span class="label">Hotline</span>
+            <a href="tel:0852982555" class="value highlight">0852 982 555</a>
+            <a href="tel:0978493028" class="value highlight">0978 493 028</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon green">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+            </svg>
+          </div>
+          <div class="contact-text">
+            <span class="label">Địa chỉ</span>
+            <span class="value">Lào Cai, Việt Nam</span>
+          </div>
+        </div>
+      </div>
+
+      <button class="mobile-menu-toggle" id="mobileMenuBtn" aria-label="Toggle Navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Navigation Bar -->
+  <nav class="main-navbar" id="mainNav">
+    <div class="container nav-container">
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item"><a href="index.html" class="nav-link">TRANG CHỦ</a></li>
+        <li class="nav-item"><a href="san-pham.html" class="nav-link">TẤT CẢ SẢN PHẨM</a></li>
+        <li class="nav-item dropdown">
+          <a href="bom-tu-ap-ram-pump.html" class="nav-link">
+            BƠM TỰ ÁP RAM PUMP
+            <svg class="arrow-down" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="bom-tu-ap-ram-pump.html">Bơm tự áp 60</a></li>
+            <li><a href="bom-tu-ap-ram-pump.html">Bơm tự áp 90</a></li>
+            <li><a href="bom-tu-ap-ram-pump.html">Bơm tự áp 110</a></li>
+            <li><a href="bom-tu-ap-ram-pump.html">Bơm tự áp 140</a></li>
+            <li><a href="bom-tu-ap-ram-pump.html">Bơm tự áp 160</a></li>
+            <li><a href="bom-tu-ap-ram-pump.html">Bơm tự áp MiNi</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="may-cong-trinh.html" class="nav-link">
+            MÁY CÔNG TRÌNH
+            <svg class="arrow-down" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="may-cong-trinh.html">Máy Đầm Thước</a></li>
+            <li><a href="may-cong-trinh.html">Bàn Bẻ Sắt</a></li>
+            <li><a href="may-cong-trinh.html">Máy Bơm Vữa</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="du-an-thuc-te.html" class="nav-link">DỰ ÁN THỰC TẾ</a></li>
+        <li class="nav-item active"><a href="kien-thuc.html" class="nav-link">KIẾN THỨC</a></li>
+        <li class="nav-item"><a href="video.html" class="nav-link">VIDEO</a></li>
+        <li class="nav-item"><a href="gioi-thieu.html" class="nav-link">GIỚI THIỆU</a></li>
+        <li class="nav-item"><a href="lien-he.html" class="nav-link">LIÊN HỆ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Subpage Header Banner -->
+  <section class="subpage-banner">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Trang chủ</a> / <span>Kiến Thức</span>
+      </div>
+      <h1 class="subpage-title">CẨM NANG & KỸ THUẬT BƠM TỰ ÁP</h1>
+      <p class="subpage-subtitle">Chia sẻ kinh nghiệm khảo sát địa hình, tính toán độ dốc và thi công lắp đặt Bơm Ram
+        Pump chuẩn nhất</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="page-content container" style="padding: 40px 20px;">
+
+    <div style="display: flex; flex-direction: column; gap: 24px;">
+
+      <article
+        style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; box-shadow: 0 2px 10px rgba(0,0,0,0.04);">
+        <h2 style="font-size: 1.25rem; color: var(--primary-navy); margin-bottom: 8px;">1. Hướng dẫn tính toán tỷ lệ
+          chênh áp giữa đầu vào và đầu ra bơm Ram Pump</h2>
+        <p style="font-size: 0.88rem; color: #64748b; line-height: 1.6; margin-bottom: 12px;">
+          Để bơm tự áp hoạt động đạt hiệu suất cao nhất, chiều cao cột nước vào (H1) và chiều cao cột nước đẩy lên (H2)
+          cần tuân theo tỷ lệ vàng H2/H1 = từ 4 đến 10 lần. Bài viết này hướng dẫn bạn cách đo độ dốc suối bằng dây nivo
+          đơn giản.
+        </p>
+        <span style="font-size: 0.8rem; color: var(--primary-green); font-weight: 700;">Đọc tiếp bài viết &rarr;</span>
+      </article>
+
+      <article
+        style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; box-shadow: 0 2px 10px rgba(0,0,0,0.04);">
+        <h2 style="font-size: 1.25rem; color: var(--primary-navy); margin-bottom: 8px;">2. Cách chọn đường kính ống dẫn
+          nước vào (Drive Pipe) chịu lực búa nước</h2>
+        <p style="font-size: 0.88rem; color: #64748b; line-height: 1.6; margin-bottom: 12px;">
+          Ống nước vào là thành phần chịu va đập lực lớn nhất. Nên chọn ống mạ kẽm hoặc ống HDPE dày lớp PN16 để tránh
+          vỡ ống do áp lực xung sóng khi van đóng đột ngột.
+        </p>
+        <span style="font-size: 0.8rem; color: var(--primary-green); font-weight: 700;">Đọc tiếp bài viết &rarr;</span>
+      </article>
+
+      <article
+        style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; box-shadow: 0 2px 10px rgba(0,0,0,0.04);">
+        <h2 style="font-size: 1.25rem; color: var(--primary-navy); margin-bottom: 8px;">3. So sánh hiệu quả kinh tế: Bơm
+          Ram Pump vs Bơm Điện vs Máy Nổ Xăng Dầu</h2>
+        <p style="font-size: 0.88rem; color: #64748b; line-height: 1.6; margin-bottom: 12px;">
+          Bài toán phân tích chi phí đầu tư ban đầu và chi phí vận hành sau 5 năm sử dụng. Bơm Ram Pump giúp tiết kiệm
+          hàng trăm triệu đồng tiền dầu và tiền điện lưới.
+        </p>
+        <span style="font-size: 0.8rem; color: var(--primary-green); font-weight: 700;">Đọc tiếp bài viết &rarr;</span>
+      </article>
+
+    </div>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="footer-brand"><span class="logo-title">BƠM TỰ ÁP</span> <span class="logo-subtitle highlight">VƯƠNG
+            GIA</span></div>
+        <p class="footer-about">Tư vấn giải pháp kỹ thuật bơm nước không dùng điện hiệu quả nhất.</p>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">THÔNG TIN LIÊN HỆ</h4>
+        <ul class="footer-links">
+          <li><strong>Địa chỉ:</strong> Lào Cai, Việt Nam</li>
+          <li><strong>Hotline 1:</strong> <a href="tel:0852982555">0852 982 555</a></li>
+          <li><strong>Hotline 2:</strong> <a href="tel:0978493028">0978 493 028</a></li>
+          <li><strong>Email:</strong> vuongxaydung1989@gmail.com</li>
+          <li><strong>Website:</strong> <a href="https://www.bomtuapvuonggia.com"
+              target="_blank">https://www.bomtuapvuonggia.com</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">DANH MỤC</h4>
+        <ul class="footer-links">
+          <li><a href="bom-tu-ap-ram-pump.html">Bơm Tự Áp Ram Pump</a></li>
+          <li><a href="may-cong-trinh.html">Máy Công Trình</a></li>
+          <li><a href="san-pham.html">Tất cả sản phẩm</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container bottom-content">
+        <p>&copy; 2026 Bơm Tự Áp Vương Gia. Tất cả quyền được bảo lưu.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
