@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /assets/images/
+Allow: /
+
+Sitemap: https://bomtuapvuonggia.com/sitemap.xml

@@ -213,27 +213,27 @@ document.addEventListener('DOMContentLoaded', () => {
       ]
     },
     18: {
-      title: "vận thang mini",
-      subtitle: "Thuận tiện, giá rẻ",
-      img: "assets/images/vận-thang-mini.jpg",
+      title: "Vận Thăng Mini 300kg",
+      subtitle: "Tải nâng 300kg, cao 50m, remote điều khiển từ xa, chống rơi an toàn",
+      img: "assets/images/van-thang-mini-thuc-te.jpg",
       videoUrl: "https://youtube.com/shorts/nh1rkgpKPqQ?si=6rvOzkt03Eij8ERN",
       features: [
-        "Vận chuyển vật liệu lên tầng nhanh chóng an toàn,tải trọng vận chuyển tối đa  300kg",
-        "lên cao tối đa 50m thẳng đứng, điều khiển từ xa,chống rơi chống trượt",
-        "Giá Liên Hệ 0978493028",
+        "Vận chuyển vật liệu lên tầng nhanh chóng an toàn, tải trọng vận chuyển tối đa 300kg",
+        "Lên cao tối đa 50m thẳng đứng, điều khiển từ xa thông minh, cơ cấu chống rơi chống trượt",
+        "Giá Liên Hệ: 0978 493 028 (Giá tại xưởng tốt nhất)",
         "Bảo hành 12 tháng toàn quốc"
       ]
     },
     19: {
-      title: "Máy bơm vữa bê tông",
-      subtitle: "Thuận tiện, hiệu quả cao",
-      img: "assets/images/may-bom-vua-be-tong.jpg",
+      title: "Máy Bơm Bê Tông Mini (Bơm Vữa Bê Tông)",
+      subtitle: "Động cơ điện 220V 4.5kW, bơm cao 4.5m, hiệu quả thi công vượt trội",
+      img: "assets/images/may-bom-be-tong-mini.jpg",
       videoUrl: "https://youtube.com/shorts/nnt0a5q4UbY?si=YgWzpF3tpux1flgD",
       features: [
-        "Vận chuyển vữa bê tông lên tầng nhanh chóng an toàn",
-        "Mô tơ 220v, 4,5kw. Bơm cao 4,5m. Bơm vữa nhanh hiệu quả",
-        "Giá 25.000.000đ",
-        "Bảo hành 12 tháng toàn quốc"
+        "Vận chuyển vữa bê tông, bê tông đá mi lên tầng nhanh chóng an toàn",
+        "Mô tơ điện 220V, 4.5kW. Bơm cao 4.5m - 6m. Bơm đẩy xa 20m",
+        "Giá niêm yết: 25.000.000đ",
+        "Bảo hành chính hãng 12 tháng toàn quốc"
       ]
     },
     20: {
@@ -323,8 +323,8 @@ document.addEventListener('DOMContentLoaded', () => {
     { id: 15, title: "Xe gắp đá 150", subtitle: "Bánh xe lốp hơi, kẹp bụng 40cm, tải nâng 150kg", img: "assets/images/xe-gap-da-150.jpg", cat: "Máy Công Trình" },
     { id: 16, title: "Xe gắp đá 250", subtitle: "Tải nâng 250kg, bánh lốp hơi vượt địa hình", img: "assets/images/xe-gap-da-250.jpg", cat: "Máy Công Trình" },
     { id: 17, title: "Xe gắp đá 350", subtitle: "Bản nâng cấp tải trọng 350kg, đòn bẩy trợ lực", img: "assets/images/xe-gap-da-350.jpg", cat: "Máy Công Trình" },
-    { id: 18, title: "Vận thang mini", subtitle: "Nâng vật liệu lên tầng tải trọng 300kg, cao 50m", img: "assets/images/van-thang-mini.jpg", cat: "Máy Công Trình" },
-    { id: 19, title: "Máy bơm vữa bê tông", subtitle: "Động cơ 220V 4.5kW, bơm cao 4.5m", img: "assets/images/may-bom-vua-be-tong.jpg", cat: "Máy Công Trình" },
+    { id: 18, title: "Vận Thăng Mini 300kg", subtitle: "Nâng vật liệu lên tầng tải trọng 300kg, cao 50m", img: "assets/images/van-thang-mini-thuc-te.jpg", cat: "Máy Công Trình" },
+    { id: 19, title: "Máy Bơm Bê Tông Mini (Bơm Vữa)", subtitle: "Động cơ 220V 4.5kW, bơm cao 4.5m, hiệu quả cao", img: "assets/images/may-bom-be-tong-mini.jpg", cat: "Máy Công Trình" },
     { id: 20, title: "Máy đầm thước V kẽm điện", subtitle: "Thước dài 2m, điện 220V 550W đầm lướt mịn", img: "assets/images/may-dam-thuoc-v-kem.jpg", cat: "Máy Công Trình" },
     { id: 21, title: "Máy đầm thước V nhôm điện", subtitle: "Thước nhôm 2m siêu nhẹ, 220V 550W", img: "assets/images/may-dam-thuoc-v-nhom.jpg", cat: "Máy Công Trình" },
     { id: 22, title: "Máy đầm thước bê tông Pin", subtitle: "9 cấp độ rung, chân pin phổ thông, thước inox 1.5m", img: "assets/images/may-dam-thuoc-be-tong-pin.jpg", cat: "Máy Công Trình" }

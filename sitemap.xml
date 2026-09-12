@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Trang đích chuyên biệt SEO Máy bơm bê tông mini, vận thăng mini, Bơm Tự Áp Vương Gia -->
+  <url>
+    <loc>https://bomtuapvuonggia.com/may-bom-be-tong-mini-van-thang-mini.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://bomtuapvuonggia.com/assets/images/may-bom-be-tong-mini.jpg</image:loc>
+      <image:title>Máy bơm bê tông mini chính hãng Vương Gia</image:title>
+      <image:caption>Máy bơm bê tông mini (máy bơm vữa bê tông) động cơ 220V 4.5kW ảnh chụp thực tế tại xưởng Vương Gia</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://bomtuapvuonggia.com/assets/images/van-thang-mini-thuc-te.jpg</image:loc>
+      <image:title>Vận thăng mini tải trọng 300kg cao 50m Vương Gia</image:title>
+      <image:caption>Vận thăng mini tời hàng nâng vật liệu xây dựng remote điều khiển từ xa chống rơi ảnh chụp thực tế công trình</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://bomtuapvuonggia.com/assets/images/bom-tu-ap-vuong-gia-thuc-te.jpg</image:loc>
+      <image:title>Bơm Tự Áp Vương Gia Ram Pump hoạt động thực tế</image:title>
+      <image:caption>Cụm 2 máy Bơm Tự Áp Vương Gia đưa nước lên núi cao 85m không tốn điện lắp đặt thực tế trên suối</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://bomtuapvuonggia.com/assets/images/prod_ram_pump_90.jpg</image:loc>
+      <image:title>Bơm tự áp 90 Vương Gia</image:title>
+      <image:caption>Máy Bơm Tự Áp Vương Gia phi 90 bình áp lực thép đúc nguyên khối</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Trang chủ -->
+  <url>
+    <loc>https://bomtuapvuonggia.com/</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://bomtuapvuonggia.com/assets/images/hero_pump.jpg</image:loc>
+      <image:title>Bơm Tự Áp Vương Gia Ram Pump</image:title>
+      <image:caption>Bơm tự áp Ram Pump Vương Gia hoạt động thực tế không cần điện</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://bomtuapvuonggia.com/assets/images/may-bom-be-tong-mini.jpg</image:loc>
+      <image:title>Máy bơm bê tông mini Vương Gia</image:title>
+      <image:caption>Máy bơm bê tông mini phục vụ công trình xây dựng nhà dân dụng</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://bomtuapvuonggia.com/assets/images/van-thang-mini-thuc-te.jpg</image:loc>
+      <image:title>Vận thăng mini Vương Gia</image:title>
+      <image:caption>Vận thăng mini tời vật liệu xây dựng tải trọng 300kg</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Trang Máy Công Trình -->
+  <url>
+    <loc>https://bomtuapvuonggia.com/may-cong-trinh.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://bomtuapvuonggia.com/assets/images/may-bom-be-tong-mini.jpg</image:loc>
+      <image:title>Máy bơm vữa bê tông mini Vương Gia</image:title>
+      <image:caption>Máy bơm vữa bê tông chính hãng động cơ 220V 4.5kW</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://bomtuapvuonggia.com/assets/images/van-thang-mini-thuc-te.jpg</image:loc>
+      <image:title>Vận thăng mini 300kg</image:title>
+      <image:caption>Vận thang mini nâng vật liệu lên tầng tải trọng 300kg cao 50m</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Trang Bơm Tự Áp Ram Pump -->
+  <url>
+    <loc>https://bomtuapvuonggia.com/bom-tu-ap-ram-pump.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://bomtuapvuonggia.com/assets/images/card_ram_pump.jpg</image:loc>
+      <image:title>Bơm Tự Áp Vương Gia</image:title>
+      <image:caption>Hệ thống bơm tự áp Ram Pump giải pháp đưa nước lên cao</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Trang Tất cả Sản Phẩm -->
+  <url>
+    <loc>https://bomtuapvuonggia.com/san-pham.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Trang Dự Án Thực Tế -->
+  <url>
+    <loc>https://bomtuapvuonggia.com/du-an-thuc-te.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Trang Kiến Thức -->
+  <url>
+    <loc>https://bomtuapvuonggia.com/kien-thuc.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Trang Video Thực Tế -->
+  <url>
+    <loc>https://bomtuapvuonggia.com/video.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Trang Giới Thiệu -->
+  <url>
+    <loc>https://bomtuapvuonggia.com/gioi-thieu.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Trang Liên Hệ -->
+  <url>
+    <loc>https://bomtuapvuonggia.com/lien-he.html</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>
